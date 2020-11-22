@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    background:transparent !important;
+    color:#000 !important;
+    text-shadow:none !important;
+    filter:none !important;
+    -ms-filter:none !important;
+}
+
+body {
+    margin:0;
+    padding:0;
+    line-height: 1.4em;
+}
+@page { margin: 0.5cm; }
+nav, footer, video, audio, object, embed {  display:none;  }
+
+.panel-danger{border:0px;}
+
+/* LINKS */
+
+.tabelaPostCabecalhoID a {display: none;}
+.panel-body a, a:visited { text-decoration: underline; }
+/* LINKS - POR ENTRE PARENTESES */
+.panel-body a:link:after, a:visited:after { content: " (" attr(href) ") ";font-size:3pt; }
+/* LINKS - NAO EXIBIR LINKS INTERNOS */
+.panel-body a:after, a[href^="javascript:"]:after, a[href^="#"]:after {  content: "";  }
+/* LINKS - QUEBRANDO LINK MUITO GRANDES NOS PARAGRAFOS */
+.panel-body p a { word-wrap: break-word; }
+
+
+.tabelaPostCabecalhoSeta {display:none;}
+
+/*QUEBRA DE PAGINA*/
+.page-break {  page-break-before: always;  }
